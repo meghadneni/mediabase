@@ -20,8 +20,6 @@ import com.example.mediabase.movies.Movie;
 import com.example.mediabase.movies.MoviesBean;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.stereotype.Component;
-
-import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -39,8 +37,12 @@ public class ActionServlet extends HttpServlet {
 
     public static int PAGE_SIZE = 5;
 
-    @EJB
     private MoviesBean moviesBean;
+
+    public ActionServlet(MoviesBean moviesbean)
+    {
+        this.moviesBean = moviesbean;
+    }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

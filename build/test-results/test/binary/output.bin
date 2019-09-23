@@ -1,0 +1,3 @@
+¤12:24:14.143 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://msd-mediabase.apps.pcf.paltraining.perficient.com/"
+©12:24:14.149 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
+Ð12:24:14.913 [Test worker] DEBUG org.springframework.web.client.RestTemplate - GET request for "http://msd-mediabase.apps.pcf.paltraining.perficient.com/" resulted in 404 (Not Found); invoking error handler

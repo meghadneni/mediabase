@@ -1,8 +1,5 @@
-plugins {
-    id 'java'
-    id 'war'
-    id 'org.springframework.boot' version '1.5.17.RELEASE'
-}
+apply plugin: 'java'
+
 sourceCompatibility = 1.8
 
 repositories {
