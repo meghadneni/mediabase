@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="mediabase.applications.podcast-ms.main" target="1.8" />
+      <module name="mediabase.applications.podcast-ms.test" target="1.8" />
       <module name="mediabase.main" target="1.8" />
       <module name="mediabase.test" target="1.8" />
     </bytecodeTargetLevel>

@@ -1,4 +1,4 @@
-package com.example.mediabase;
+package com.example.mediabase.podcasts;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
