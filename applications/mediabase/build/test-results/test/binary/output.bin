@@ -1,0 +1,2 @@
+Å14:15:01.367 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Created GET request for "http://localhost:8080/"
+©14:15:01.373 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Setting request Accept header to [text/plain, application/json, application/*+json, */*]
