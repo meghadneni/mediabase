@@ -23,7 +23,7 @@ jobs:
         file:
           - "applications/mediabase/build/libs/mediabase-1.0-SNAPSHOT.war"
           - "applications/movies-ms/build/libs/movies-ms-1.0-SNAPSHOT.jar"
-          - "applications/podcasts-ms/build/libs/podcast-ms-1.0-SNAPSHOT.jar"
+          - "applications/podcasts-ms/build/libs/podcasts-ms-1.0-SNAPSHOT.jar"
         skip_cleanup: true
     - stage: deploy to test
       language: java
@@ -31,7 +31,7 @@ jobs:
         - echo "Downloading $RELEASE_TAG"
         - wget -P applications/mediabase/build/libs https://github.com/$GITHUB_USERNAME/mediabase/releases/download/$RELEASE_TAG/mediabase-1.0-SNAPSHOT.war
         - wget -P applications/movies-ms/build/libs https://github.com/$GITHUB_USERNAME/mediabase/releases/download/$RELEASE_TAG/movies-ms-1.0-SNAPSHOT.jar
-        - wget -P applications/podcasts-ms/build/libs https://github.com/$GITHUB_USERNAME/mediabase/releases/download/$RELEASE_TAG/podcast-ms-1.0-SNAPSHOT.jar
+        - wget -P applications/podcasts-ms/build/libs https://github.com/$GITHUB_USERNAME/mediabase/releases/download/$RELEASE_TAG/podcasts-ms-1.0-SNAPSHOT.jar
       before_deploy:
         - echo "Deploying $RELEASE_TAG to test"
       deploy:
