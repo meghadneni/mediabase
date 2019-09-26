@@ -1,11 +1,13 @@
 package com.example.mediabase.podcasts;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
 @EnableWebSecurity
+@ConditionalOnProperty(value = "enable-oauth", havingValue = "false")
 @Configuration
 public class DisableSecurityConfiguration extends WebSecurityConfigurerAdapter {
 

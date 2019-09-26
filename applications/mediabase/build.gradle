@@ -15,6 +15,8 @@ dependencyManagement {
 
 dependencies {
     compile project(":components:ui")
+    compile('org.springframework.cloud:spring-cloud-starter-oauth2')
+    compile("io.pivotal.spring.cloud:spring-cloud-sso-connector:$SCSSOVersion")
     compile('io.pivotal.spring.cloud:spring-cloud-services-starter-circuit-breaker')
     compile('io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry')
     compile('taglibs:standard:1.1.2')
