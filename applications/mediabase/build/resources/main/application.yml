@@ -4,14 +4,15 @@ spring:
   mvc.view:
     prefix: /WEB-INF/
     suffix: .jsp
-  logging.level:
-    root: WARN
-    com.example.mediabase.podcastsui: DEBUG
 
-  hystrix:
-    command:
-      default:
-        execution:
-          isolation:
-            thread:
-              timeoutInMilliseconds: 5000
+logging.level:
+  root: WARN
+  com.example.mediabase.podcastui: DEBUG
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
